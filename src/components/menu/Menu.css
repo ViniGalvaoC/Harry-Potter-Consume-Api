@@ -1,0 +1,37 @@
+.menu {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    background-color: rgb(99, 99, 182);
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    justify-content: center;
+}
+
+.menu-logo {
+    flex: 1 1 auto; /* Permite que o logo se ajuste conforme necessário */
+    max-width: 150px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menu-logo-image {
+    width: 100%; /* Ajusta a imagem para ocupar todo o espaço do logo */
+}
+
+.menu-navigation {
+    display: flex;
+    gap: 20px; /* Reduz o espaço entre os links para uma melhor visualização */
+    justify-content: center;
+}
+
+.menu-navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 15px; /* Ajusta o padding para um melhor espaçamento */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+.menu-navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Adiciona um efeito de hover */
+}
