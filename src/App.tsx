@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import SpellApiComponent from './components/spell/Spell';
+import CharacterApiComponent from './components/character/Character';
+import Menu from './components/menu/Menu';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Menu />
+        <div className="content">
+          <Routes>
+            <Route path="/spells" element={<SpellApiComponent />} />
+            <Route path="/characters" element={<CharacterApiComponent />} />
+            <Route path="/books" element={<SpellApiComponent />} />
+            <Route path="/houses" element={<CharacterApiComponent />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
