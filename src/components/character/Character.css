@@ -1,0 +1,24 @@
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+  
+.character-item {
+    flex: 1 1 200px; /* Permite que os itens cresçam e encolham, com um tamanho base de 200px */
+    max-width: 150px; /* Define um tamanho máximo para os itens */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.character-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
